@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAGT Ungindoni - Huduma Zetu</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(3, 3, 43);
+        }
+        h2 {
+            text-align: center;
+            color: rgb(22, 1, 29);
+        }
+        body {
+            text-align: center;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: skyblue;
+            font-family: ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        .logo img {
+            border-radius: 30px;
+            width: 100px; /* Adjust as needed */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        nav {
+            text-align: center;
+            background-color: #f4f5f2;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #011022;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #360404;
+            color: #fff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(200px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        footer {
+            font-size: 12px;
+        }
+        .scroll-top-wrapper {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+        .scroll-top-inner {
+            background-color: #ffab1f;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .scroll-top-wrapper.show {
+            display: block;
+        }
+        .map-container {
+            height: 55%;
+            background-color: #fcfdfd; /* Light background for map area */
+        }
+        .slider-container {
+            min-height: 50%; /* Ensure minimum height for the slider */
+            background-color: #e9ecef; /* Light background for slider area */
+        }
+        .carousel-inner {
+            height: 400px; /* Fixed height for the carousel */
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure images cover the area without distortion */
+        }
+        .contact-us {
+            background-color: #65a7e9; /* Dark blue background */
+            color: rgb(19, 1, 1);
+            padding: 2rem 0;
+        }
+        .contact-us h2 {
+            margin-bottom: 1rem;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1em;
+        }
+        .contact-item i {
+            font-size: 1.5em;
+        }
+        .contact-item p {
+            margin: 0;
+        }
+        .contact-item a {
+            color: #fcfaf6;
+            text-decoration: none;
+        }
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Logo ya Kisima cha Baraka">
+            </div>
+            <h1>EAGT Ungindoni-Kisima cha baraka</h1>
+        </header>
+        <nav>
+            <a href="index.html"><strong>Home</strong></a>  |
+            <a href="about.html"><strong>About us</strong></a> |
+            <a href="#contact"><strong>Contact us</strong></a>
+        </nav>
+        <section id="services">
+            <h2 class="fade-in-up">Huduma zetu</h2>
+            <table class="fade-in-up">
+                <caption>Ratiba za ibada</caption>
+                <thead>
+                    <tr>
+                        <th>Siku</th>
+                        <th>Huduma</th>
+                        <th>Muda</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jumatatu & Jumanne</td>
+                        <td>Huduma ya Maombi</td>
+                        <td>Muda Wowote</td>
+                    </tr>
+                    <tr>
+                        <td>Jumatano</td>
+                        <td>Kujifunza Neno la Mungu</td>
+                        <td>10:00 PM - 12:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Ijumaa</td>
+                        <td>Ibada ya Maombi</td>
+                        <td>10:00 PM - 12:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Jumamosi & Alhamis</td>
+                        <td>Praise and worship & kwaya</td>
+                        <td>10:00 PM - 12:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Jumapili</td>
+                        <td>Sunday School<br>Ibada Kuu</td>
+                        <td>03:00 AM - 04:00 AM<br>04:00 AM - 06:30 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- Contact Us Section -->
+        <section class="contact-us">
+            <div id="contact">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fa fa-envelope"></i>
+                            <p>Email: <a href="mailto:eagt.ungindoni@gmail.com">eagt.ungindoni@gmail.com</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-phone"></i>
+                            <p>Phone: +255 762 855 400</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa fa-map-marker"></i>
+                            <p>Address: EAGT Ungindoni, P.O. Box 17106, Dar es Salaam, Tanzania</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Kisima cha Baraka. All rights reserved.</p>
+        </footer>
+        <div class="scroll-top-wrapper">
+            <span class="scroll-top-inner">
+                <a style="font-size:15px; color:white;">Scroll to top</a>
+            </span>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show scroll-to-top button on scroll
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    document.querySelector('.scroll-top-wrapper').classList.add('show');
+                } else {
+                    document.querySelector('.scroll-top-wrapper').classList.remove('show');
+                }
+            });
+
+            // Scroll to top functionality
+            document.querySelector('.scroll-top-wrapper').addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Fade-in effect
+            const fadeInElements = document.querySelectorAll('.fade-in-up');
+
+            function checkVisibility() {
+                fadeInElements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    const viewportHeight = window.innerHeight;
+                    if (rect.top < viewportHeight - 50) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+
+            checkVisibility(); // Initial check
+            window.addEventListener('scroll', checkVisibility); // Check on scroll
+        });
+    </script>
+</body>
+</html>
+
+
